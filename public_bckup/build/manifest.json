@@ -1,0 +1,12 @@
+{
+  "public/assets/css/custom.scss": {
+    "file": "assets/custom-6faa02f0.css",
+    "isEntry": true,
+    "src": "public/assets/css/custom.scss"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-a5991337.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

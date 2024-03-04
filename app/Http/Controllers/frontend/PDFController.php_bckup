@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Http\Controllers\frontend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use PDF;
+
+class PDFController extends Controller
+{
+    public function generatePDF()
+    {
+        $grade_data = DB::table('sub_cat_ranges_presentation as scrp')
+                        ->get();
+        $data = [
+            'title' => 'Welcome',
+            'date' => date('m/d/Y'),
+        ];
+        $pdf = PDF::loadView('frontend_view/pdf/myPDF',$data);
+        return $pdf->stream();
+    }
+}

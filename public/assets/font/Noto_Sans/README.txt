@@ -1,0 +1,1 @@
+-webkit-linear-gradient(right, #d3552e 40%, #F58621 60%)

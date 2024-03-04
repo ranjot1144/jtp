@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Http\Controllers\frontend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class FilterationController extends Controller
+{
+    public function filteration() {
+        return view('frontend_view.filteration.filteration_page');
+    }
+    public function filterpaper() {
+        return view('frontend_view.filteration.filter_paper');
+    }
+    public function quantitativepage() {
+        return view('frontend_view.filteration.quantitative_page');
+    }
+    public function quant_cat() {
+        return view('frontend_view.filteration.quant_cat_page');
+    }
+}
